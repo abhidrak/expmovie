@@ -41,27 +41,27 @@ jobs:
         id: prepare_channels
         run: |
           # Define all channels in order of priority
-          CHANNELS=(
-            "AniSnap"
-            "CineCrunch Explains"
-            "FlashFrame Films"
-            "FlickBreakdown"
-            "MiniMovieVault"
-            "MovieBite Explained"
-            "PlotSnap"
-            "QuickFlick Recap"
-            "SceneSync"
-            "ThrillRecaps"
-          )
-          echo "channels=${CHANNELS[*]}" >> $GITHUB_OUTPUT
+          # Using multiline output format to preserve spaces in channel names
+          echo "channels<<EOF" >> $GITHUB_OUTPUT
+          echo "AniSnap" >> $GITHUB_OUTPUT
+          echo "CineCrunch Explains" >> $GITHUB_OUTPUT
+          echo "FlashFrame Films" >> $GITHUB_OUTPUT
+          echo "FlickBreakdown" >> $GITHUB_OUTPUT
+          echo "MiniMovieVault" >> $GITHUB_OUTPUT
+          echo "MovieBite Explained" >> $GITHUB_OUTPUT
+          echo "PlotSnap" >> $GITHUB_OUTPUT
+          echo "QuickFlick Recap" >> $GITHUB_OUTPUT
+          echo "SceneSync" >> $GITHUB_OUTPUT
+          echo "ThrillRecaps" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
           
       - name: Process channels sequentially
         id: channel_upload
         run: |
           echo "Starting sequential channel uploads"
           
-          # Read channel array
-          IFS=' ' read -r -a CHANNELS <<< "${{ steps.prepare_channels.outputs.channels }}"
+          # Read channel array from multiline output
+          readarray -t CHANNELS <<< "${{ steps.prepare_channels.outputs.channels }}"
           
           # Store which channels succeeded and which failed
           SUCCEEDED_CHANNELS=()
