@@ -122,16 +122,16 @@ def get_youtube_credentials(channel_id=None, channel_name=None):
     
     # Channel name to Drive file ID mapping
     CHANNEL_DRIVE_LINKS = {
-        "AniSnap": "https://drive.google.com/file/d/1AtmjeK1KUBbAw4JzY4HbpDnw39TvtOFS/view?usp=sharing",
-        "CineCrunch Explains": "https://drive.google.com/file/d/13a77rZsjW42-pAmG7CN01-yr_vhvqnRH/view?usp=sharing",
-        "FlashFrame Films": "https://drive.google.com/file/d/1xT8EU11poKqWkWjTEzx68wzdDRaQD26w/view?usp=sharing",
-        "FlickBreakdown": "https://drive.google.com/file/d/1bNdt4e_eLvJJHWL59ZMK7zQlEGZ0Zuu4/view?usp=sharing",
-        "MiniMovieVault": "https://drive.google.com/file/d/1QFMV_xfpwofwaBRspx42x7CNHBfueMx1/view?usp=sharing",
-        "MovieBite Explained": "https://drive.google.com/file/d/14A8v3lxnr-0rnPjB94X9DgJk-thuccle/view?usp=sharing",
-        "PlotSnap": "https://drive.google.com/file/d/1G1X4X9euuQn5ZRdlLdGmbC5TOAp4keN5/view?usp=sharing",
-        "QuickFlick Recap": "https://drive.google.com/file/d/1hlMq4AWvoaaexczViI5q3-Vpj-IsGhYB/view?usp=sharing",
-        "SceneSync": "https://drive.google.com/file/d/1c2MTVU1q5V2QQGLqTCcgsu5M0DfbfgoO/view?usp=sharing",
-        "ThrillRecaps": "https://drive.google.com/file/d/1hrNaEXG6BcAhOOn-EGrz-tyYvudo2klz/view?usp=sharing"
+        "AniSnap": "https://drive.google.com/file/d/1kb6pWaj9BfS3mGoIceImmkjEOl3iNRTx/view?usp=sharing",
+        "CineCrunch Explains": "https://drive.google.com/file/d/1cU_kjO-znXwP8hbOfsQ521hE9vpsNoPw/view?usp=sharing",
+        "FlashFrame Films": "https://drive.google.com/file/d/1wxr7a06ORfjGDzF_BudI2HqntR_HKNB1/view?usp=sharing",
+        "FlickBreakdown": "https://drive.google.com/file/d/14kaWD4gH0dZZZSDPqI21MVT31zeYz6Io/view?usp=sharing",
+        "MiniMovieVault": "https://drive.google.com/file/d/1aj7OnAem_oTgkypWHHdZgxSvb6Uy083O/view?usp=sharing",
+        "MovieBite Explained": "https://drive.google.com/file/d/1mQR165ChZyk4LubKA3AaBfsvUxMXmwQz/view?usp=sharing",
+        "PlotSnap": "https://drive.google.com/file/d/1q5_f3S3QMybOFPYmk9-o4UPunO68FLTG/view?usp=sharing",
+        "QuickFlick Recap": "https://drive.google.com/file/d/1waBzxnXMKT-6FIE8jCCqN_wUbWMs0vxk/view?usp=sharing",
+        "SceneSync": "https://drive.google.com/file/d/1l2xdpoP3VyOHGBRRaNCIJnRcANfauCvd/view?usp=sharing",
+        "ThrillRecaps": "https://drive.google.com/file/d/1wJ4wPR0J7uzFzwpp8sF9UOeGp4olrjK9/view?usp=sharing"
     }
     
     if not channel_name and not channel_id:
@@ -197,16 +197,16 @@ def list_available_youtube_channels():
     """List all channels that have saved YouTube tokens on Google Drive."""
     # Channel token Google Drive links
     CHANNEL_DRIVE_LINKS = {
-        "AniSnap": "https://drive.google.com/file/d/1AtmjeK1KUBbAw4JzY4HbpDnw39TvtOFS/view?usp=sharing",
-        "CineCrunch Explains": "https://drive.google.com/file/d/13a77rZsjW42-pAmG7CN01-yr_vhvqnRH/view?usp=sharing",
-        "FlashFrame Films": "https://drive.google.com/file/d/1xT8EU11poKqWkWjTEzx68wzdDRaQD26w/view?usp=sharing",
-        "FlickBreakdown": "https://drive.google.com/file/d/1bNdt4e_eLvJJHWL59ZMK7zQlEGZ0Zuu4/view?usp=sharing",
-        "MiniMovieVault": "https://drive.google.com/file/d/1QFMV_xfpwofwaBRspx42x7CNHBfueMx1/view?usp=sharing",
-        "MovieBite Explained": "https://drive.google.com/file/d/14A8v3lxnr-0rnPjB94X9DgJk-thuccle/view?usp=sharing",
-        "PlotSnap": "https://drive.google.com/file/d/1G1X4X9euuQn5ZRdlLdGmbC5TOAp4keN5/view?usp=sharing",
-        "QuickFlick Recap": "https://drive.google.com/file/d/1hlMq4AWvoaaexczViI5q3-Vpj-IsGhYB/view?usp=sharing",
-        "SceneSync": "https://drive.google.com/file/d/1c2MTVU1q5V2QQGLqTCcgsu5M0DfbfgoO/view?usp=sharing",
-        "ThrillRecaps": "https://drive.google.com/file/d/1hrNaEXG6BcAhOOn-EGrz-tyYvudo2klz/view?usp=sharing"
+        "AniSnap": "https://drive.google.com/file/d/1kb6pWaj9BfS3mGoIceImmkjEOl3iNRTx/view?usp=sharing",
+        "CineCrunch Explains": "https://drive.google.com/file/d/1cU_kjO-znXwP8hbOfsQ521hE9vpsNoPw/view?usp=sharing",
+        "FlashFrame Films": "https://drive.google.com/file/d/1wxr7a06ORfjGDzF_BudI2HqntR_HKNB1/view?usp=sharing",
+        "FlickBreakdown": "https://drive.google.com/file/d/14kaWD4gH0dZZZSDPqI21MVT31zeYz6Io/view?usp=sharing",
+        "MiniMovieVault": "https://drive.google.com/file/d/1aj7OnAem_oTgkypWHHdZgxSvb6Uy083O/view?usp=sharing",
+        "MovieBite Explained": "https://drive.google.com/file/d/1mQR165ChZyk4LubKA3AaBfsvUxMXmwQz/view?usp=sharing",
+        "PlotSnap": "https://drive.google.com/file/d/1q5_f3S3QMybOFPYmk9-o4UPunO68FLTG/view?usp=sharing",
+        "QuickFlick Recap": "https://drive.google.com/file/d/1waBzxnXMKT-6FIE8jCCqN_wUbWMs0vxk/view?usp=sharing",
+        "SceneSync": "https://drive.google.com/file/d/1l2xdpoP3VyOHGBRRaNCIJnRcANfauCvd/view?usp=sharing",
+        "ThrillRecaps": "https://drive.google.com/file/d/1wJ4wPR0J7uzFzwpp8sF9UOeGp4olrjK9/view?usp=sharing"
     }
     
     print("\nAvailable YouTube Channels:")
