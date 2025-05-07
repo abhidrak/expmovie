@@ -5,9 +5,7 @@ on:
   workflow_dispatch:
   
   # Daily scheduled runs
-  schedule:
-    # Run daily at 2 PM UTC (14:00)
-    - cron: '0 14 * * *'
+  
 
 # This workflow handles anime content uploads for educational purposes only
 jobs:
